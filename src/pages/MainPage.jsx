@@ -9,6 +9,8 @@ import BlurReveal from '../components/BlurReveal';
 import ScrollProgress from '../components/ScrollProgress';
 import MemoryBubbles from '../components/MemoryBubbles';
 import HangingProfile from '../components/HangingProfile';
+import HorizontalGallery from '../components/HorizontalGallery';
+import Preloader from '../components/Preloader';
 
 const MainPage = () => {
   // Data dummy timeline
@@ -21,6 +23,9 @@ const MainPage = () => {
 
   return (
     <div className="w-full min-h-screen relative text-[#112D4E] bg-transparent">
+      {/* Layar Loading yang akan muncul pertama kali sebelum memudar/bergeser */}
+      <Preloader />
+      
       <ScrollProgress />
       <GlobalBackground />
 
@@ -127,17 +132,8 @@ const MainPage = () => {
           </div>
         </section>
 
-        {/* Interactive Text / Element Section */}
-        <section className="w-full relative py-32 bg-[#F9F7F7] flex flex-col items-center justify-center overflow-hidden group cursor-crosshair border-y border-[#DBE2EF]">
-          <BlurReveal>
-            <h2 className="text-[12vw] font-black text-[#DBE2EF] group-hover:text-transparent group-hover:-translate-y-8 transition-all duration-700 select-none tracking-tighter" style={{ WebkitTextStroke: '2px #3F72AF' }}>
-              TERUS BERSAMA
-            </h2>
-          </BlurReveal>
-          <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 transition-all duration-700 ease-out">
-            <span className="text-3xl md:text-6xl font-serif italic text-[#112D4E]">Hari Ini dan Selamanya</span>
-          </div>
-        </section>
+        {/* Interactive Horizontal Gallery (Insta-Style) */}
+        <HorizontalGallery />
 
         {/* Memory Bubbles Section */}
         <section className="w-full relative py-20 md:py-32">

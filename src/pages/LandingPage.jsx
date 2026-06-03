@@ -33,16 +33,7 @@ const LandingPage = () => {
     const event = new CustomEvent('play-bgm');
     window.dispatchEvent(event);
     
-    anime({
-      targets: 'body',
-      opacity: [1, 0],
-      duration: 1000,
-      easing: 'easeInOutQuad',
-      complete: () => {
-        navigate('/main');
-        anime.set('body', { opacity: 1 });
-      }
-    });
+    navigate('/main');
   };
 
   return (
