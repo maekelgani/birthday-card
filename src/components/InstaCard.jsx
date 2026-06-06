@@ -67,7 +67,7 @@ const InstaCard = ({ imageSrc, username, date, caption }) => {
       <div className="flex items-center px-4 py-3 border-b border-[#DBE2EF]/50">
         <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#3F72AF] to-[#DBE2EF] p-[2px]">
           <div className="w-full h-full rounded-full bg-white border border-white">
-            <img src={imageSrc} alt="avatar" className="w-full h-full rounded-full object-cover" />
+            <img src={imageSrc} alt="avatar" loading="lazy" decoding="async" className="w-full h-full rounded-full object-cover" />
           </div>
         </div>
         <div className="ml-3 flex flex-col">
@@ -84,6 +84,8 @@ const InstaCard = ({ imageSrc, username, date, caption }) => {
         <img 
           src={imageSrc} 
           alt="Post media" 
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
         />
       </div>

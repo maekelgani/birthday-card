@@ -18,12 +18,12 @@ const GalleryPage = () => {
 
   // Placeholders from unsplash with romantic/aesthetic vibe
   const images = [
-    "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=500&q=80",
-    "https://images.unsplash.com/photo-1520113412461-12c852924b17?auto=format&fit=crop&w=500&q=80",
-    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80",
-    "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=500&q=80",
-    "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=500&q=80",
-    "https://images.unsplash.com/photo-1506744626753-2fea104b826f?auto=format&fit=crop&w=500&q=80",
+    "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=500&q=60",
+    "https://images.unsplash.com/photo-1520113412461-12c852924b17?auto=format&fit=crop&w=500&q=60",
+    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=60",
+    "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=500&q=60",
+    "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=500&q=60",
+    "https://images.unsplash.com/photo-1506744626753-2fea104b826f?auto=format&fit=crop&w=500&q=60",
   ];
 
   return (
@@ -47,6 +47,7 @@ const GalleryPage = () => {
                 alt={`Kenangan ${idx+1}`} 
                 className="w-full h-auto hover:scale-105 transition-transform duration-500 ease-out"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           </div>

@@ -62,7 +62,7 @@ const AudioPlayer = () => {
   const togglePlay = (e) => {
     e.stopPropagation();
     if (!audioRef.current) return;
-    
+
     if (isPlaying) {
       audioRef.current.pause();
     } else {
@@ -79,7 +79,7 @@ const AudioPlayer = () => {
   };
 
   return (
-    <div 
+    <div
       ref={playerRef}
       className="fixed top-6 right-6 z-50 bg-[#DBE2EF]/70 backdrop-blur-xl border border-[#FFFFFF]/60 shadow-xl flex items-center justify-center overflow-hidden cursor-pointer"
       style={{ width: '56px', height: '56px', borderRadius: '28px' }}
@@ -93,7 +93,7 @@ const AudioPlayer = () => {
             <span className="text-[10px] text-[#3F72AF] font-bold uppercase tracking-widest">Sedang Diputar</span>
             <span className="text-sm text-[#112D4E] font-extrabold truncate w-24">Lagu Favorit</span>
           </div>
-          
+
           <div className="flex items-center gap-3">
             <button onClick={togglePlay} className="p-2.5 rounded-full bg-[#112D4E] text-[#FFFFFF] hover:scale-105 transition-transform shadow-md">
               {isPlaying ? <Pause className="w-4 h-4 fill-current" /> : <Play className="w-4 h-4 fill-current ml-0.5" />}
@@ -101,9 +101,9 @@ const AudioPlayer = () => {
             <button onClick={handleSkip} className="p-2 rounded-full text-[#3F72AF] hover:bg-[#FFFFFF]/50 transition-colors">
               <SkipForward className="w-5 h-5" />
             </button>
-            
-            <button 
-              onClick={(e) => { e.stopPropagation(); toggleExpand(); }} 
+
+            <button
+              onClick={(e) => { e.stopPropagation(); toggleExpand(); }}
               className="ml-1 p-1 text-[#112D4E]/50 hover:text-[#112D4E]"
             >
               <X className="w-5 h-5" />

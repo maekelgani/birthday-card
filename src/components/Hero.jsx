@@ -7,11 +7,12 @@ const Hero = () => {
   const contentWrapperRef = useRef(null);
 
   const sliderImages = [
-    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80",
-    "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=400&q=80",
-    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
-    "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=400&q=80",
-    "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=400&q=80",
+    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=60",
+    "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=400&q=60",
+    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=60",
+    "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=400&q=60",
+    "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=400&q=60",
+    "https://images.unsplash.com/photo-1502444330042-d1a1ddf9bb5b?auto=format&fit=crop&w=400&q=60"
   ];
 
   const duplicateImages = [...sliderImages, ...sliderImages];
@@ -92,7 +93,7 @@ const Hero = () => {
             <div className="flex flex-col gap-4 animate-moveVerticalUp w-full">
               {duplicateImages.map((src, index) => (
                 <div key={index} className="w-full aspect-[3/4] shrink-0 relative overflow-hidden rounded-[2rem] border border-[#DBE2EF]/50">
-                  <img src={src} alt="Memory Slider Up" className="w-full h-full object-cover object-center grayscale contrast-[1.08] brightness-[0.8] hover:grayscale-0 hover:contrast-100 hover:brightness-100 transition-all duration-700" />
+                  <img src={src} alt="Memory Slider Up" loading={index > 1 ? "lazy" : "eager"} decoding="async" className="w-full h-full object-cover object-center grayscale contrast-[1.08] brightness-[0.8] hover:grayscale-0 hover:contrast-100 hover:brightness-100 transition-all duration-700" />
                 </div>
               ))}
             </div>
@@ -103,7 +104,7 @@ const Hero = () => {
             <div className="flex flex-col gap-4 animate-moveVerticalDown w-full">
               {duplicateImages.map((src, index) => (
                 <div key={index} className="w-full aspect-[3/4] shrink-0 relative overflow-hidden rounded-[2rem] border border-[#DBE2EF]/50">
-                  <img src={src} alt="Memory Slider Down" className="w-full h-full object-cover object-center grayscale contrast-[1.08] brightness-[0.8] hover:grayscale-0 hover:contrast-100 hover:brightness-100 transition-all duration-700" />
+                  <img src={src} alt="Memory Slider Down" loading={index > 1 ? "lazy" : "eager"} decoding="async" className="w-full h-full object-cover object-center grayscale contrast-[1.08] brightness-[0.8] hover:grayscale-0 hover:contrast-100 hover:brightness-100 transition-all duration-700" />
                 </div>
               ))}
             </div>

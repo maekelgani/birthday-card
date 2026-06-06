@@ -9,9 +9,9 @@ const MiniGallery = () => {
   const overlayBgRef = useRef(null);
 
   const images = [
-    { src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=500&q=80", msg: "Senyuman itu selalu menjadi alasan utama mengapa dunia terasa begitu hangat meski di hari yang paling dingin sekalipun." },
-    { src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80", msg: "Langkah kita mungkin kecil, tapi jejak yang kita tinggalkan di setiap sudut kota ini akan selalu menjadi cerita yang tak pernah usang." },
-    { src: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=500&q=80", msg: "Waktu berlalu begitu cepat, namun kenangan yang kita ukir hari ini akan menjadi monumen abadi untuk masa depan." },
+    { src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=500&q=60", msg: "Senyuman itu selalu menjadi alasan utama mengapa dunia terasa begitu hangat meski di hari yang paling dingin sekalipun." },
+    { src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=60", msg: "Langkah kita mungkin kecil, tapi jejak yang kita tinggalkan di setiap sudut kota ini akan selalu menjadi cerita yang tak pernah usang." },
+    { src: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=500&q=60", msg: "Waktu berlalu begitu cepat, namun kenangan yang kita ukir hari ini akan menjadi monumen abadi untuk masa depan." },
   ];
 
   const handleCardClick = (index) => {
@@ -123,7 +123,7 @@ const MiniGallery = () => {
           >
             <div className="w-full h-full relative transition-all duration-500 ease-out md:group-hover:opacity-60 md:group-hover:blur-[2px] md:hover:!opacity-100 md:hover:!blur-0 md:hover:-translate-y-4 md:hover:scale-105 md:hover:z-10">
               <div className="absolute inset-0 rounded-3xl overflow-hidden shadow-lg border border-[#DBE2EF]">
-                <img src={item.src} alt="Kenangan" className="w-full h-full object-cover" />
+                <img src={item.src} alt="Kenangan" loading="lazy" decoding="async" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -165,6 +165,8 @@ const MiniGallery = () => {
               <img 
                 src={images[activeIndex].src} 
                 alt="Kenangan Overlay" 
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
             </div>
