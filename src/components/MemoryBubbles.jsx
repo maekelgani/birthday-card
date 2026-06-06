@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import anime from 'animejs';
 
-const MemoryBubbles = () => {
+const MemoryBubbles = ({ onFinale }) => {
   const [poppedCount, setPoppedCount] = useState(0);
   const words = ["I", "Love", "You"];
   const bubblesRef = useRef([]);
@@ -41,6 +41,10 @@ const MemoryBubbles = () => {
       const nextCount = prev + 1;
       if (nextCount === 3) {
         setTimeout(triggerFireworks, 600);
+        // Delay 2000ms setelah semua gelembung pecah sebelum memanggil onFinale
+        setTimeout(() => {
+          if (onFinale) onFinale();
+        }, 2000);
       }
       return nextCount;
     });

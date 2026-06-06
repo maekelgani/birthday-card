@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Hero from '../components/Hero';
 import TimelineItem from '../components/TimelineItem';
 import CurvedCarousel from '../components/CurvedCarousel';
@@ -11,6 +11,7 @@ import MemoryBubbles from '../components/MemoryBubbles';
 import HangingProfile from '../components/HangingProfile';
 import HorizontalGallery from '../components/HorizontalGallery';
 import Preloader from '../components/Preloader';
+import FinaleCanvas from '../components/FinaleCanvas';
 
 const MainPage = () => {
   // Data dummy timeline
@@ -18,14 +19,16 @@ const MainPage = () => {
     { year: "2023", title: "Awal Pertemuan", desc: "Senyum pertama yang meruntuhkan segala keraguan." },
     { year: "2024", title: "Petualangan", desc: "Langkah-langkah kecil menelusuri sudut kota yang tak terhitung jumlahnya." },
     { year: "2025", title: "Ujian Waktu", desc: "Jarak dan rindu yang justru menguatkan ikatan kita." },
-    { year: "2026", title: "Hari Ini", desc: "Dan di titik ini, aku masih bersyukur memilikimu." }
+    { year: "2026", title: "Hari Ini", desc: "Menghabiskan waktu menyusuri jalanan kota tanpa tujuan, namun menemukan makna di setiap langkah." }
   ];
+
+  const [isFinaleVisible, setIsFinaleVisible] = useState(false);
 
   return (
     <div className="w-full min-h-screen relative text-[#112D4E] bg-transparent">
       {/* Layar Loading yang akan muncul pertama kali sebelum memudar/bergeser */}
       <Preloader />
-      
+
       <ScrollProgress />
       <GlobalBackground />
 
@@ -138,11 +141,14 @@ const MainPage = () => {
         {/* Memory Bubbles Section */}
         <section className="w-full relative py-20 md:py-32">
           <BlurReveal>
-            <MemoryBubbles />
+            <MemoryBubbles onFinale={() => setIsFinaleVisible(true)} />
           </BlurReveal>
         </section>
 
       </div>
+
+      {/* Lapisan Hitam Grand Finale */}
+      <FinaleCanvas isVisible={isFinaleVisible} />
     </div>
   );
 };
