@@ -23,14 +23,22 @@ const AudioPlayer = () => {
       setIsPlaying(!audioRef.current.paused);
     };
 
+    const handlePlayBgm = () => {
+      if (audioRef.current) {
+        audioRef.current.play().catch(err => console.log('Autoplay prevented:', err));
+      }
+    };
+
     audioRef.current.addEventListener('play', checkPlayState);
     audioRef.current.addEventListener('pause', checkPlayState);
+    window.addEventListener('play-bgm', handlePlayBgm);
 
     return () => {
       if (audioRef.current) {
         audioRef.current.removeEventListener('play', checkPlayState);
         audioRef.current.removeEventListener('pause', checkPlayState);
       }
+      window.removeEventListener('play-bgm', handlePlayBgm);
     };
   }, []);
 

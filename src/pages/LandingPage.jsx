@@ -1,24 +1,30 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import anime from 'animejs';
-import { PlayCircle } from 'lucide-react';
+import { PlayCircle, Lock } from 'lucide-react';
 import GlobalBackground from '../components/GlobalBackground';
+import PinKeypad from '../components/PinKeypad';
 
 const LandingPage = () => {
   const navigate = useNavigate();
   const textRef = useRef(null);
   const btnRef = useRef(null);
+  const keypadRef = useRef(null);
+  
+  const [pin, setPin] = useState('');
+  const [pinError, setPinError] = useState(false);
+  const CORRECT_PIN = '070723';
 
   useEffect(() => {
     if (textRef.current && btnRef.current) {
-      anime.set([textRef.current, btnRef.current], {
+      anime.set([textRef.current, keypadRef.current, btnRef.current], {
         opacity: 0,
         filter: 'blur(10px)',
         translateY: 20
       });
 
       anime({
-        targets: [textRef.current, btnRef.current],
+        targets: [textRef.current, keypadRef.current, btnRef.current],
         opacity: 1,
         filter: 'blur(0px)',
         translateY: 0,
@@ -30,6 +36,12 @@ const LandingPage = () => {
   }, []);
 
   const handleEnter = () => {
+    if (pin !== CORRECT_PIN) {
+      setPinError(true);
+      setTimeout(() => setPinError(false), 500);
+      return;
+    }
+
     const event = new CustomEvent('play-bgm');
     window.dispatchEvent(event);
     
@@ -50,12 +62,20 @@ const LandingPage = () => {
           </p>
         </div>
 
+        <div ref={keypadRef} className="w-full">
+          <PinKeypad pin={pin} setPin={setPin} error={pinError} />
+        </div>
+
         <button 
           ref={btnRef}
           onClick={handleEnter}
           className="group relative inline-flex items-center gap-3 px-8 py-4 bg-[#3F72AF] rounded-full text-white font-semibold tracking-wide hover:bg-[#112D4E] hover:scale-105 transition-all duration-500 overflow-hidden shadow-xl shadow-[#3F72AF]/30"
         >
-          <PlayCircle className="w-5 h-5 group-hover:scale-110 transition-transform duration-500" />
+          {pin === CORRECT_PIN ? (
+            <PlayCircle className="w-5 h-5 group-hover:scale-110 transition-transform duration-500" />
+          ) : (
+            <Lock className="w-5 h-5 group-hover:scale-110 transition-transform duration-500" />
+          )}
           <span>Buka Kenangan</span>
         </button>
       </div>
