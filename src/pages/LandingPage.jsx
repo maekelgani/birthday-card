@@ -10,7 +10,7 @@ const LandingPage = () => {
   const textRef = useRef(null);
   const btnRef = useRef(null);
   const keypadRef = useRef(null);
-  
+
   const [pin, setPin] = useState('');
   const [pinError, setPinError] = useState(false);
   const CORRECT_PIN = '070723';
@@ -44,7 +44,7 @@ const LandingPage = () => {
 
     const event = new CustomEvent('play-bgm');
     window.dispatchEvent(event);
-    
+
     navigate('/main');
   };
 
@@ -55,10 +55,10 @@ const LandingPage = () => {
       <div className="relative z-10 flex flex-col items-center justify-center p-6 text-center space-y-12">
         <div ref={textRef} className="space-y-4">
           <h1 className="font-sans text-5xl md:text-7xl font-extrabold text-[#112D4E] tracking-tight drop-shadow-sm">
-            Untukmu
+            Buka Hadiah untuk Kamu
           </h1>
           <p className="text-[#3F72AF] font-sans font-medium tracking-widest text-sm md:text-base uppercase opacity-80">
-            Sebuah cerita yang belum usai
+            Sebuah Kenangan sederhana
           </p>
         </div>
 
@@ -66,7 +66,7 @@ const LandingPage = () => {
           <PinKeypad pin={pin} setPin={setPin} error={pinError} />
         </div>
 
-        <button 
+        <button
           ref={btnRef}
           onClick={handleEnter}
           className="group relative inline-flex items-center gap-3 px-8 py-4 bg-[#3F72AF] rounded-full text-white font-semibold tracking-wide hover:bg-[#112D4E] hover:scale-105 transition-all duration-500 overflow-hidden shadow-xl shadow-[#3F72AF]/30"

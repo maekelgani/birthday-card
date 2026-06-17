@@ -7,12 +7,12 @@ const Hero = () => {
   const contentWrapperRef = useRef(null);
 
   const sliderImages = [
-    "https://i.pinimg.com/736x/64/82/24/648224379f8d8409291755f4fb880532.jpg",
-    "https://photos.fife.usercontent.google.com/pw/AP1GczPptImXKFb9ShwK37CfCbZqeBZv-Bx5mjABBhHLmbibV1FNeMJQ85L6_g=w1679-h945-s-no-gm?authuser=0",
-    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=60",
-    "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=400&q=60",
-    "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=400&q=60",
-    "https://images.unsplash.com/photo-1502444330042-d1a1ddf9bb5b?auto=format&fit=crop&w=400&q=60"
+    "/HeroPict-1 (1).jpg",
+    "/HeroPict-1 (2).jpg",
+    "/HeroPict-1 (3).jpg",
+    "/HeroPict-1 (4).jpg",
+    "/HeroPict-1 (5).jpg",
+    "/HeroPict-1 (6).jpg"
   ];
 
   const duplicateImages = [...sliderImages, ...sliderImages];

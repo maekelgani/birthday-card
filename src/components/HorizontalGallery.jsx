@@ -10,116 +10,117 @@ const HorizontalGallery = () => {
   const posts = [
     {
       id: 1,
-      imageSrc: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "igPost (1).jpg",
       username: "kenang.kenangan",
-      date: "07 Jul 2023",
-      caption: "Awal perjalanan kita. Senyum pertama yang tak akan pernah kulupa."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 2,
-      imageSrc: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "igPost (2).jpg",
       username: "kenang.kenangan",
-      date: "14 Agu 2024",
-      caption: "Menelusuri sudut kota yang asing, namun terasa familiar bersamamu."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 3,
-      imageSrc: "https://images.unsplash.com/photo-1520113412461-12c852924b17?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "igPost (3).jpg",
       username: "kenang.kenangan",
-      date: "22 Sep 2025",
-      caption: "Banyak hal berubah, tapi rasa ini tetap sama, bahkan bertumbuh."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 4,
-      imageSrc: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "igPost (4).jpg ",
       username: "kenang.kenangan",
-      date: "01 Nov 2026",
-      caption: "Dan kita akan terus melangkah. Hari ini, besok, dan selamanya."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 5,
-      imageSrc: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "igPost (5).jpg",
       username: "kenang.kenangan",
-      date: "31 Des 2026",
-      caption: "Semesta menjadi saksi atas setiap tawa yang kita bagi."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 6,
-      imageSrc: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "igPost (6).jpg",
       username: "kenang.kenangan",
-      date: "31 Des 2026",
-      caption: "Semesta menjadi saksi atas setiap tawa yang kita bagi."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 7,
-      imageSrc: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "carousel (1).png",
       username: "kenang.kenangan",
-      date: "31 Des 2026",
-      caption: "Semesta menjadi saksi atas setiap tawa yang kita bagi."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 8,
-      imageSrc: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "carousel (2).jpg",
       username: "kenang.kenangan",
-      date: "31 Des 2026",
-      caption: "Semesta menjadi saksi atas setiap tawa yang kita bagi."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 9,
-      imageSrc: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "carousel (3).jpg",
       username: "kenang.kenangan",
-      date: "31 Des 2026",
-      caption: "Semesta menjadi saksi atas setiap tawa yang kita bagi."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 10,
-      imageSrc: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "carousel (4).jpg",
       username: "kenang.kenangan",
-      date: "31 Des 2026",
-      caption: "Semesta menjadi saksi atas setiap tawa yang kita bagi."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 11,
-      imageSrc: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "carousel (5).jpg",
       username: "kenang.kenangan",
-      date: "31 Des 2026",
-      caption: "Semesta menjadi saksi atas setiap tawa yang kita bagi."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 12,
-      imageSrc: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "carousel (6).jpg",
       username: "kenang.kenangan",
-      date: "31 Des 2026",
-      caption: "Semesta menjadi saksi atas setiap tawa yang kita bagi."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 13,
-      imageSrc: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "carousel (7).jpg",
       username: "kenang.kenangan",
-      date: "31 Des 2026",
-      caption: "Semesta menjadi saksi atas setiap tawa yang kita bagi."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 14,
-      imageSrc: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "carousel (8).jpg",
       username: "kenang.kenangan",
-      date: "31 Des 2026",
-      caption: "Semesta menjadi saksi atas setiap tawa yang kita bagi."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 15,
-      imageSrc: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "carousel (9).jpg",
       username: "kenang.kenangan",
-      date: "31 Des 2026",
-      caption: "Semesta menjadi saksi atas setiap tawa yang kita bagi."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 16,
-      imageSrc: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=60",
+      imageSrc: "carousel (10).jpg",
       username: "kenang.kenangan",
-      date: "31 Des 2026",
-      caption: "Semesta menjadi saksi atas setiap tawa yang kita bagi."
+      date: "07 Jun 2023",
+      caption: "Semua kengangan kita dalam satu frame"
     }
+
   ];
 
   useEffect(() => {

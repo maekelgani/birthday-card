@@ -9,9 +9,9 @@ const MiniGallery = () => {
   const overlayBgRef = useRef(null);
 
   const images = [
-    { src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=500&q=60", msg: "Senyuman itu selalu menjadi alasan utama mengapa dunia terasa begitu hangat meski di hari yang paling dingin sekalipun." },
-    { src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=60", msg: "Langkah kita mungkin kecil, tapi jejak yang kita tinggalkan di setiap sudut kota ini akan selalu menjadi cerita yang tak pernah usang." },
-    { src: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=500&q=60", msg: "Waktu berlalu begitu cepat, namun kenangan yang kita ukir hari ini akan menjadi monumen abadi untuk masa depan." },
+    { src: "miniGal (3).jpg", msg: "Senyuman itu selalu menjadi alasan utama mengapa dunia terasa begitu hangat meski di hari yang paling dingin sekalipun." },
+    { src: "miniGal (1).jpg", msg: "Langkah kita mungkin kecil, tapi jejak yang kita tinggalkan di setiap sudut kota ini akan selalu menjadi cerita yang tak pernah usang." },
+    { src: "miniGal (2).jpg", msg: "Waktu berlalu begitu cepat, namun kenangan yang kita ukir hari ini akan menjadi monumen abadi untuk masa depan." },
   ];
 
   const handleCardClick = (index) => {
@@ -28,7 +28,7 @@ const MiniGallery = () => {
       duration: 300,
       easing: 'easeInQuad'
     });
-    
+
     anime({
       targets: overlayImageRef.current,
       rotateY: 90,
@@ -39,7 +39,7 @@ const MiniGallery = () => {
       duration: 400,
       easing: 'easeInQuad'
     });
-    
+
     anime({
       targets: overlayBgRef.current,
       opacity: 0,
@@ -54,12 +54,12 @@ const MiniGallery = () => {
   useEffect(() => {
     if (activeIndex !== null) {
       const isMobile = window.innerWidth < 768;
-      
+
       const imgTargetX = isMobile ? 0 : -192;
       const imgTargetY = isMobile ? -138 : 0;
       const textTargetX = isMobile ? 0 : 172;
       const textTargetY = isMobile ? 158 : 0;
-      
+
       anime.set(overlayBgRef.current, { opacity: 0 });
       anime.set(overlayImageRef.current, { rotateY: -180, scale: 0.5, opacity: 0, translateX: 0, translateY: 0 });
       anime.set(overlayTextRef.current, { opacity: 0, translateX: 0, translateY: 0, scale: 0.8 });
@@ -89,10 +89,10 @@ const MiniGallery = () => {
         translateX: textTargetX,
         translateY: textTargetY,
         duration: 800,
-        delay: 300, 
+        delay: 300,
         easing: 'easeOutQuint'
       });
-      
+
       const handleResize = () => {
         const mobile = window.innerWidth < 768;
         if (overlayImageRef.current && overlayTextRef.current) {
@@ -106,7 +106,7 @@ const MiniGallery = () => {
           });
         }
       };
-      
+
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
     }
@@ -116,8 +116,8 @@ const MiniGallery = () => {
     <div className="w-full flex flex-col items-center pb-16 relative">
       <div className="group grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 w-full mb-12">
         {images.map((item, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="relative w-full aspect-[4/5] cursor-pointer perspective-1000"
             onClick={() => handleCardClick(index)}
           >
@@ -132,13 +132,13 @@ const MiniGallery = () => {
 
       {activeIndex !== null && (
         <div className="fixed inset-0 z-50 flex items-center justify-center pointer-events-auto">
-          <div 
+          <div
             ref={overlayBgRef}
             className="absolute inset-0 bg-[#FFFFFF]/90 backdrop-blur-md cursor-pointer"
             onClick={closeOverlay}
           ></div>
-          
-          <button 
+
+          <button
             onClick={closeOverlay}
             className="absolute top-6 right-6 z-[60] p-3 bg-[#DBE2EF]/50 backdrop-blur-md rounded-full text-[#112D4E] hover:bg-[#3F72AF] hover:text-white transition-colors shadow-sm"
           >
@@ -146,8 +146,8 @@ const MiniGallery = () => {
           </button>
 
           <div className="relative w-0 h-0 flex items-center justify-center">
-            
-            <div 
+
+            <div
               ref={overlayTextRef}
               className="absolute w-[260px] h-[260px] md:w-[360px] md:h-[360px] -left-[130px] -top-[130px] md:-left-[180px] md:-top-[180px] p-6 md:p-10 bg-[#F9F7F7]/95 rounded-[2rem] shadow-xl border border-[#DBE2EF] flex flex-col justify-center z-10"
             >
@@ -157,14 +157,14 @@ const MiniGallery = () => {
               </p>
             </div>
 
-            <div 
+            <div
               ref={overlayImageRef}
               className="absolute w-[240px] h-[300px] md:w-[320px] md:h-[400px] -left-[120px] -top-[150px] md:-left-[160px] md:-top-[200px] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white z-20 bg-white"
               style={{ transformOrigin: 'center center' }}
             >
-              <img 
-                src={images[activeIndex].src} 
-                alt="Kenangan Overlay" 
+              <img
+                src={images[activeIndex].src}
+                alt="Kenangan Overlay"
                 loading="lazy"
                 decoding="async"
                 className="w-full h-full object-cover"
@@ -174,7 +174,7 @@ const MiniGallery = () => {
           </div>
         </div>
       )}
-      
+
       <style>{`
         .perspective-1000 {
           perspective: 1000px;

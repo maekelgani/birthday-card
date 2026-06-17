@@ -140,7 +140,7 @@ const FinaleCanvas = ({ isVisible }) => {
       {/* Overlay Teks Penutup */}
       <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
         <h1 className="text-white font-serif italic text-4xl md:text-6xl font-bold opacity-80 mix-blend-difference drop-shadow-2xl text-center px-4 leading-tight">
-          Dan Cerita Ini <br /> <span className="text-white">Akan Terus Berlanjut...</span>
+          Tahun ini belum berakhir <br /> <span className="text-white">Cerita kita masih berjalan...</span>
         </h1>
         <p className="text-white/40 mt-8 text-xs md:text-sm tracking-widest uppercase font-sans animate-pulse">
           Ketuk Layar Untuk Menjeda/Memutar

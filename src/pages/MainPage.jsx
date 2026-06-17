@@ -12,16 +12,32 @@ import HangingProfile from '../components/HangingProfile';
 import HorizontalGallery from '../components/HorizontalGallery';
 import Preloader from '../components/Preloader';
 import FinaleCanvas from '../components/FinaleCanvas';
+import BirthdayWish from '../components/BirthdayWish';
 
 const MainPage = () => {
   // Data dummy timeline
   const timelineData = [
-    { year: "2023", title: "Awal Pertemuan", desc: "Senyum pertama yang meruntuhkan segala keraguan." },
-    { year: "2024", title: "Petualangan", desc: "Langkah-langkah kecil menelusuri sudut kota yang tak terhitung jumlahnya." },
-    { year: "2025", title: "Ujian Waktu", desc: "Jarak dan rindu yang justru menguatkan ikatan kita." },
-    { year: "2026", title: "Hari Ini", desc: "Menghabiskan waktu menyusuri jalanan kota tanpa tujuan, namun menemukan makna di setiap langkah." }
+    {
+      year: "2023",
+      title: "Awal Pertemuan",
+      desc: "Ini adalah tahun awal kita ketemu, pas akhir perjalanan perpisahan di rumah makan. Aku bahkan ga ingat kita ketemu di situ, tapi kamu ingat dan malah nyariin aku awkaokw. Ga kepikiran sih pulang dari Jogja malah kecantolan. Kita kenalan, jalan bareng, dan awalnya ga kepikiran buat serius. Tapi ya, rasa nyaman emang ga bisa bohong."
+    },
+    {
+      year: "2024",
+      title: "Petualangan",
+      desc: "Satu tahun jalanin kehidupan sama kamu, dan ini kali pertama buat aku bisa sampai sejauh ini. Kamu ngenalin dunia kamu, aku juga ngenalin minat aku, kita jadi makin saling kenal. Masalah dan kesalahpahaman pasti muncul, tapi kamu, aku, kita.. masih terus jalan bareng dan ga menyerah yaa."
+    },
+    {
+      year: "2025",
+      title: "Ujian Waktu",
+      desc: "Dua tahun sudah berjalan. Makasih ya udah kuat bertahan di hubungan yang ombaknya lumayan tinggi. Mungkin tahun ini aku sering bikin kamu marah, kesel, dan khawatir. Tapi kamu tetep sayang dan setia nemenin aku pas lagi sakit, dirawat, sampai pemulihan—terima kasih banyak. Aku seneng banget kita bisa coba banyak hal baru, jalan-jalan ke museum, dan datang ke tempat yang belum pernah kita cobain. Seru yaaa!"
+    },
+    {
+      year: "2026",
+      title: "Hari Ini",
+      desc: "Awal tahun ini kayaknya kita sempat marahan yaa, aku tida ingat  x. Tapi yang penting intinya, 3 tahun sudah berjalan dan perjalanan kita masih terus berlanjut. Buat kamu, selalu bertahan dan bareng-bareng terus yaa. Tahun ini belum selesai, dan tahun depan masih ada. Masih banyak tempat yang belum kita kunjungi dan rencana yang belum kita selesain."
+    }
   ];
-
   const [isFinaleVisible, setIsFinaleVisible] = useState(false);
 
   return (
@@ -137,6 +153,9 @@ const MainPage = () => {
 
         {/* Interactive Horizontal Gallery (Insta-Style) */}
         <HorizontalGallery />
+
+        {/* Birthday Wish Section */}
+        <BirthdayWish />
 
         {/* Memory Bubbles Section */}
         <section className="w-full relative py-20 md:py-32">
