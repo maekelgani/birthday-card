@@ -10,112 +10,112 @@ const HorizontalGallery = () => {
   const posts = [
     {
       id: 1,
-      imageSrc: "igPost (1).jpg",
+      imageSrc: "igPost (1).webp",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 2,
-      imageSrc: "igPost (2).jpg",
+      imageSrc: "igPost (2).webp",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 3,
-      imageSrc: "igPost (3).jpg",
+      imageSrc: "igPost (3).webp",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 4,
-      imageSrc: "igPost (4).jpg ",
+      imageSrc: "igPost (4).webp ",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 5,
-      imageSrc: "igPost (5).jpg",
+      imageSrc: "igPost (5).webp",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 6,
-      imageSrc: "igPost (6).jpg",
+      imageSrc: "igPost (6).webp",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 7,
-      imageSrc: "carousel (1).png",
+      imageSrc: "carousel (1).webp",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 8,
-      imageSrc: "carousel (2).jpg",
+      imageSrc: "carousel (2).webp",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 9,
-      imageSrc: "carousel (3).jpg",
+      imageSrc: "carousel (3).webp",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 10,
-      imageSrc: "carousel (4).jpg",
+      imageSrc: "carousel (4).webp",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 11,
-      imageSrc: "carousel (5).jpg",
+      imageSrc: "carousel (5).webp",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 12,
-      imageSrc: "carousel (6).jpg",
+      imageSrc: "carousel (6).webp",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 13,
-      imageSrc: "carousel (7).jpg",
+      imageSrc: "carousel (7).webp",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 14,
-      imageSrc: "carousel (8).jpg",
+      imageSrc: "carousel (8).webp",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 15,
-      imageSrc: "carousel (9).jpg",
+      imageSrc: "carousel (9).webp",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"
     },
     {
       id: 16,
-      imageSrc: "carousel (10).jpg",
+      imageSrc: "carousel (10).webp",
       username: "kenang.kenangan",
       date: "07 Jun 2023",
       caption: "Semua kengangan kita dalam satu frame"

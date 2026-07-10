@@ -18,12 +18,12 @@ const GalleryPage = () => {
 
   // Placeholders from unsplash with romantic/aesthetic vibe
   const images = [
-    "miniGal (2).jpg",
-    "miniGal (1).jpg",
-    "miniGal (3).jpg",
-    "gallery (1).jpg",
-    "gallery (2).jpg",
-    "gallery (3).jpg",
+    "miniGal (2).webp",
+    "miniGal (1).webp",
+    "miniGal (3).webp",
+    "gallery (1).webp",
+    "gallery (2).webp",
+    "gallery (3).webp",
   ];
 
   return (

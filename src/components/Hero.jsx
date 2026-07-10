@@ -7,12 +7,12 @@ const Hero = () => {
   const contentWrapperRef = useRef(null);
 
   const sliderImages = [
-    "/HeroPict-1 (1).jpg",
-    "/HeroPict-1 (2).jpg",
-    "/HeroPict-1 (3).jpg",
-    "/HeroPict-1 (4).jpg",
-    "/HeroPict-1 (5).jpg",
-    "/HeroPict-1 (6).jpg"
+    "/HeroPict-1 (1).webp",
+    "/HeroPict-1 (2).webp",
+    "/HeroPict-1 (3).webp",
+    "/HeroPict-1 (4).webp",
+    "/HeroPict-1 (5).webp",
+    "/HeroPict-1 (6).webp"
   ];
 
   const duplicateImages = [...sliderImages, ...sliderImages];

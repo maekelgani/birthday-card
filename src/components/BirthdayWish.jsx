@@ -63,14 +63,17 @@ const BirthdayWish = () => {
             Sebuah Harapan
           </span>
           <h2 className="font-sans text-5xl md:text-7xl font-extrabold text-[#112D4E] tracking-tight leading-tight opacity-0">
-            Selamat <br className="hidden md:block" /> Ulang Tahun
+            Selamat <br className="hidden md:block" /> Ulang Tahun Sayanggkuu
           </h2>
           <div className="space-y-4 opacity-0">
             <p className="text-[#112D4E]/80 text-lg md:text-xl font-medium leading-relaxed">
-              Semoga di usia yang baru ini, setiap langkahmu selalu diiringi oleh kebahagiaan dan tawa yang tulus.
+              Terimaaci buat kamu tahun 2025-2026 ini, terimaaci kamu suda bertahan yaa sayangg. ❤️
             </p>
             <p className="text-[#112D4E]/80 text-base md:text-lg leading-relaxed">
-              Terima kasih karena selalu menjadi alasan di balik senyumku. Teruslah bersinar, teruslah mengejar apa yang kamu impikan. Kita akan selalu merayakan banyak pencapaian hebatmu di tahun-tahun mendatang.
+              Adik sekarang sudah 22 tahun, walau suda 22 kamu tetap adik kecil aku. Kamu selalu jadi adik kecil mamas.
+              Tahun ini.. Semoga semua yang kamu harapkan dan semua yang kamu cita-cita kan terwujud yaa sayangg.
+              Semoga kamu selalu sehat selalu dalam lindungan Allah SWT. Selalu jadi anak yang baik dan berbakti kepada orang tahun
+              Semoga sukses selalu, diberi banyak rezekinya dan dilancarkan. AAMIIN. Love youu!! 💗💗💗
             </p>
           </div>
         </div>

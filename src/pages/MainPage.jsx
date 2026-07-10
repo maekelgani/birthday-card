@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Hero from '../components/Hero';
 import TimelineItem from '../components/TimelineItem';
 import CurvedCarousel from '../components/CurvedCarousel';
@@ -13,28 +14,30 @@ import HorizontalGallery from '../components/HorizontalGallery';
 import Preloader from '../components/Preloader';
 import FinaleCanvas from '../components/FinaleCanvas';
 import BirthdayWish from '../components/BirthdayWish';
+import GiftSurprise from '../components/GiftSurprise';
 
 const MainPage = () => {
+  const navigate = useNavigate();
   // Data dummy timeline
   const timelineData = [
     {
       year: "2023",
-      title: "Awal Pertemuan",
+      title: "Kisah Bermula",
       desc: "Ini adalah tahun awal kita ketemu, pas akhir perjalanan perpisahan di rumah makan. Aku bahkan ga ingat kita ketemu di situ, tapi kamu ingat dan malah nyariin aku awkaokw. Ga kepikiran sih pulang dari Jogja malah kecantolan. Kita kenalan, jalan bareng, dan awalnya ga kepikiran buat serius. Tapi ya, rasa nyaman emang ga bisa bohong."
     },
     {
       year: "2024",
-      title: "Petualangan",
+      title: "Perjalanan",
       desc: "Satu tahun jalanin kehidupan sama kamu, dan ini kali pertama buat aku bisa sampai sejauh ini. Kamu ngenalin dunia kamu, aku juga ngenalin minat aku, kita jadi makin saling kenal. Masalah dan kesalahpahaman pasti muncul, tapi kamu, aku, kita.. masih terus jalan bareng dan ga menyerah yaa."
     },
     {
       year: "2025",
       title: "Ujian Waktu",
-      desc: "Dua tahun sudah berjalan. Makasih ya udah kuat bertahan di hubungan yang ombaknya lumayan tinggi. Mungkin tahun ini aku sering bikin kamu marah, kesel, dan khawatir. Tapi kamu tetep sayang dan setia nemenin aku pas lagi sakit, dirawat, sampai pemulihan—terima kasih banyak. Aku seneng banget kita bisa coba banyak hal baru, jalan-jalan ke museum, dan datang ke tempat yang belum pernah kita cobain. Seru yaaa!"
+      desc: "Dua tahun sudah berjalan. Makasih ya udah kuat bertahan di hubungan yang ombaknya lumayan tinggi. Mungkin tahun ini aku sering bikin kamu marah, kesel, dan khawatir (walau tiap hari suka bikin kamu marah). Tapi kamu tetep sayang dan setia nemenin aku pas lagi sakit, dirawat, sampai pemulihan—terima kasih banyak. Aku seneng banget kita bisa coba banyak hal baru, jalan-jalan ke museum, dan datang ke tempat yang belum pernah kita cobain. Seru yaaa!"
     },
     {
       year: "2026",
-      title: "Hari Ini",
+      title: "Hari Ini..",
       desc: "Awal tahun ini kayaknya kita sempat marahan yaa, aku tida ingat  x. Tapi yang penting intinya, 3 tahun sudah berjalan dan perjalanan kita masih terus berlanjut. Buat kamu, selalu bertahan dan bareng-bareng terus yaa. Tahun ini belum selesai, dan tahun depan masih ada. Masih banyak tempat yang belum kita kunjungi dan rencana yang belum kita selesain."
     }
   ];
@@ -98,7 +101,7 @@ const MainPage = () => {
           {/* Tombol Lihat Galeri Kenangan */}
           <BlurReveal delay={300} className="mt-8">
             <button
-              onClick={() => window.location.href = '/gallery'}
+              onClick={() => navigate('/gallery')}
               className="px-8 py-4 bg-[#3F72AF] text-[#FFFFFF] rounded-full font-sans font-semibold tracking-wide hover:bg-[#112D4E] hover:scale-105 transition-all duration-300 shadow-xl shadow-[#3F72AF]/30"
             >
               Lihat Galeri Kenangan
@@ -134,7 +137,7 @@ const MainPage = () => {
             <div className="w-full md:w-2/3 pt-4 md:pt-16">
               <BlurReveal delay={200}>
                 <h2 className="text-3xl md:text-5xl lg:text-6xl font-sans text-[#112D4E] font-light leading-[1.1] mb-10 tracking-tight">
-                  Sebuah cerita yang tumbuh melalui <span className="italic font-serif text-[#3F72AF]">langkah-langkah kecil</span> dan mengubah angan menjadi <span className="font-bold">kenyataan nyata.</span>
+                  Sebuah cerita yang tumbuh melalui <span className="italic font-serif text-[#3F72AF]">pertemuan singkat</span> dan mengubah sebuah cerita <span className="font-bold">menjadi terasa nyata.</span>
                 </h2>
               </BlurReveal>
               <BlurReveal delay={300}>
@@ -142,7 +145,7 @@ const MainPage = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
 
-                <div className="flex items-center gap-2 border-b border-[#112D4E]/30 pb-2 w-fit cursor-pointer group hover:border-[#3F72AF] transition-colors duration-300">
+                <div onClick={() => navigate('/about')} className="flex items-center gap-2 border-b border-[#112D4E]/30 pb-2 w-fit cursor-pointer group hover:border-[#3F72AF] transition-colors duration-300">
                   <span className="text-[#112D4E] font-semibold text-sm group-hover:text-[#3F72AF] transition-colors">Baca Kisah Lengkap</span>
                   <span className="text-[#112D4E] group-hover:text-[#3F72AF] group-hover:translate-x-2 transition-all duration-300">→</span>
                 </div>
@@ -156,6 +159,9 @@ const MainPage = () => {
 
         {/* Birthday Wish Section */}
         <BirthdayWish />
+
+        {/* Gift Surprise Section (Illusion of Choice) */}
+        <GiftSurprise />
 
         {/* Memory Bubbles Section */}
         <section className="w-full relative py-20 md:py-32">

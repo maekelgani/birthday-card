@@ -9,9 +9,9 @@ const MiniGallery = () => {
   const overlayBgRef = useRef(null);
 
   const images = [
-    { src: "miniGal (3).jpg", msg: "Senyuman itu selalu menjadi alasan utama mengapa dunia terasa begitu hangat meski di hari yang paling dingin sekalipun." },
-    { src: "miniGal (1).jpg", msg: "Langkah kita mungkin kecil, tapi jejak yang kita tinggalkan di setiap sudut kota ini akan selalu menjadi cerita yang tak pernah usang." },
-    { src: "miniGal (2).jpg", msg: "Waktu berlalu begitu cepat, namun kenangan yang kita ukir hari ini akan menjadi monumen abadi untuk masa depan." },
+    { src: "miniGal (3).webp", msg: "Ini foto kita jalan-jalan akhir tahun 2023. ini jujur jalanku paling jauh naik motor, dan pertamakalinya langsung sama kamu. terimaaci untuk kamu yang sudah memperkenalkan aku ke dunia yang luas ini. jujur sih kurank lamaa, pengen main lama-lamaa main air maw laa. When yahh kita ke pantai lagiiii..." },
+    { src: "miniGal (1).webp", msg: "Ini foto date kita di kebun rayaa, kalo diinget inget lucu banget kita banya banyaa foto, walau fotonya kaku kaku tapi lucu. Sayang banget pas itu maw hujan, padahal pas otw panas banget. nanti kita ke sini lagii yaaa" },
+    { src: "miniGal (2).webp", msg: "Nahhh inii nii, foto paling estetig ANJAYYY. yaa walaupun kesel ya karna angkot malah bawa kita muter jauh syalan emang. tapi lumayan lah bisa ke ancol gratis walau cuman liatin langit gelap" },
   ];
 
   const handleCardClick = (index) => {
