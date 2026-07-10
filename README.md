@@ -1,6 +1,7 @@
 # Hadiah Ulang Tahun Interaktif
 
 Website SPA interaktif yang dibangun dengan React (Vite), Tailwind CSS, dan Anime.js.
+dibuat dengan metode vibe coding, menggunakan Antigravity IDE
 
 ## Cara Mengganti Audio (BGM)
 
