@@ -15,6 +15,7 @@ import Preloader from '../components/Preloader';
 import FinaleCanvas from '../components/FinaleCanvas';
 import BirthdayWish from '../components/BirthdayWish';
 import GiftSurprise from '../components/GiftSurprise';
+import WishForYou from '../components/WishForYou';
 
 const MainPage = () => {
   const navigate = useNavigate();
@@ -142,7 +143,7 @@ const MainPage = () => {
               </BlurReveal>
               <BlurReveal delay={300}>
                 <p className="text-sm md:text-base text-[#112D4E]/70 font-sans leading-relaxed max-w-xl mb-12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Ini tentang Gani dan Nisa, cuman ringkasan diri dari "siapa itu Maekel dan Anissya. Kalo pengen tahu lebih lanjut tentang mereka silahkan dibuka yaaaa!!! lovee"
                 </p>
 
                 <div onClick={() => navigate('/about')} className="flex items-center gap-2 border-b border-[#112D4E]/30 pb-2 w-fit cursor-pointer group hover:border-[#3F72AF] transition-colors duration-300">
@@ -162,6 +163,9 @@ const MainPage = () => {
 
         {/* Gift Surprise Section (Illusion of Choice) */}
         <GiftSurprise />
+
+        {/* Premium Dark Glassmorphism Wish Section */}
+        <WishForYou />
 
         {/* Memory Bubbles Section */}
         <section className="w-full relative py-20 md:py-32">

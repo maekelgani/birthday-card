@@ -60,7 +60,7 @@ const BirthdayWish = () => {
         {/* Kolom Kiri: Teks Ucapan */}
         <div className="flex flex-col space-y-6" ref={textRef}>
           <span className="text-[#3F72AF] font-mono tracking-widest font-semibold uppercase opacity-0">
-            Sebuah Harapan
+            Ucapan Selamat
           </span>
           <h2 className="font-sans text-5xl md:text-7xl font-extrabold text-[#112D4E] tracking-tight leading-tight opacity-0">
             Selamat <br className="hidden md:block" /> Ulang Tahun Sayanggkuu
@@ -71,9 +71,8 @@ const BirthdayWish = () => {
             </p>
             <p className="text-[#112D4E]/80 text-base md:text-lg leading-relaxed">
               Adik sekarang sudah 22 tahun, walau suda 22 kamu tetap adik kecil aku. Kamu selalu jadi adik kecil mamas.
-              Tahun ini.. Semoga semua yang kamu harapkan dan semua yang kamu cita-cita kan terwujud yaa sayangg.
-              Semoga kamu selalu sehat selalu dalam lindungan Allah SWT. Selalu jadi anak yang baik dan berbakti kepada orang tahun
-              Semoga sukses selalu, diberi banyak rezekinya dan dilancarkan. AAMIIN. Love youu!! 💗💗💗
+              di umur yang ke-22 tahun ini, kita harus menjadi lebih baik dari hari sebelm-sebelumnya ya sayangg. Perjalanan kita masih panjang. aku selalu mengucapkan terimakasih ke kamu atas semua yang sudah kamu berikan ke aku. dan kamu juga harus berterimakasih kepada diri kamu atas apa yang sudah kamu berikan untuk kamu sendiri. kamu harus taw kalo aku selalu sayangin kamu. cintain kamu. dan kita harus selalu akan begitu yaaa!!
+
             </p>
           </div>
         </div>

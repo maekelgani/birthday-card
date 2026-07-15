@@ -5,31 +5,31 @@ import anime from 'animejs';
 const polaroidData = [
   {
     id: 1,
-    src: 'https://images.unsplash.com/photo-1516589178581-6cd78536f115?w=500&q=80',
-    caption: 'Best day ever 💖',
+    src: '/igPost (1)-6.webp',
+    caption: 'Cincin kebahagiaan 💖',
     rotate: '-rotate-3',
   },
   {
     id: 2,
-    src: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=500&q=80',
-    caption: 'Just the two of us ✨',
+    src: '/igPost (2).webp',
+    caption: 'Masak Masak Gemas ✨',
     rotate: 'rotate-2',
   },
   {
     id: 3,
-    src: 'https://images.unsplash.com/photo-1518599904199-0ca897819ddb?w=500&q=80',
-    caption: 'Aesthetic moments 📸',
+    src: '/carousel (1).webp',
+    caption: 'Jalan Jalan ✨',
     rotate: '-rotate-6',
   },
   {
     id: 4,
-    src: 'https://images.unsplash.com/photo-1494774157365-9e04c6720e47?w=500&q=80',
-    caption: 'My favorite smile',
+    src: '/miniGal (2).webp',
+    caption: 'ESTETIG ✨',
     rotate: 'rotate-4',
   },
   {
     id: 5,
-    src: 'https://images.unsplash.com/photo-1517404215738-15263e9f9178?w=500&q=80',
+    src: 'HeroPict-1 (2).webp',
     caption: 'Forever & Always',
     rotate: '-rotate-2',
   }
@@ -101,7 +101,7 @@ const AboutUs = () => {
 
           {/* Romantic Quote */}
           <blockquote className="font-serif italic text-xl md:text-2xl text-[#112D4E]/70 max-w-2xl mt-6">
-            "Kisah kita adalah kanvas kosong yang terus kita lukisi dengan memori, warna, dan canda tawa, selamanya."
+            "Dua entitas yang dipertemukan takdir"
           </blockquote>
         </div>
       </section>
@@ -174,7 +174,7 @@ const AboutUs = () => {
               {/* Album Cover */}
               <div className="absolute inset-0 w-full h-full bg-white shadow-xl md:shadow-2xl z-10 overflow-hidden border border-[#DBE2EF] flex items-center justify-center">
                 <img
-                  src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=500&q=80"
+                  src="/lagu_gani.webp"
                   alt="Album Pilihan Gani"
                   loading="lazy"
                   className="w-full h-full object-cover opacity-90"
@@ -184,7 +184,7 @@ const AboutUs = () => {
             </div>
             <div className="mt-6 md:mt-10 text-center">
               <p className="font-sans font-bold text-sm md:text-lg text-[#112D4E]">Pilihan Gani</p>
-              <p className="font-sans text-[#3F72AF] mt-1" style={{ fontFamily: "'Caveat', cursive", fontSize: '1.2rem' }}>Classic Vibes</p>
+              <p className="font-sans text-[#3F72AF] mt-1" style={{ fontFamily: "'Caveat', cursive", fontSize: '1.2rem' }}>Sukidakara - Yuika ft. Ren</p>
             </div>
           </div>
 
@@ -204,7 +204,7 @@ const AboutUs = () => {
               {/* Album Cover */}
               <div className="absolute inset-0 w-full h-full bg-white shadow-xl md:shadow-2xl z-10 overflow-hidden border border-[#DBE2EF] flex items-center justify-center">
                 <img
-                  src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500&q=80"
+                  src="/lagu_nisa.webp"
                   alt="Album Pilihan Nisa"
                   loading="lazy"
                   className="w-full h-full object-cover opacity-90"
@@ -214,7 +214,7 @@ const AboutUs = () => {
             </div>
             <div className="mt-6 md:mt-10 text-center">
               <p className="font-sans font-bold text-sm md:text-lg text-[#112D4E]">Pilihan Nisa</p>
-              <p className="font-sans text-[#3F72AF] mt-1" style={{ fontFamily: "'Caveat', cursive", fontSize: '1.2rem' }}>Aesthetic Pop</p>
+              <p className="font-sans text-[#3F72AF] mt-1" style={{ fontFamily: "'Caveat', cursive", fontSize: '1.2rem' }}>Sheila On 7 - film favorit</p>
             </div>
           </div>
 
